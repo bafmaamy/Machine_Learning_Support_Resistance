@@ -24,3 +24,5 @@ Imports:
 - sklearn.metrics
 - yfinance
 - mplfinance
+
+Added s/r values into a file, to be imported directly as indicatior in Tradingview
