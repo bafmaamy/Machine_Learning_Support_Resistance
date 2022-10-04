@@ -9,20 +9,20 @@ from sklearn.metrics import silhouette_score
 
 # ----------------- inputs ---------------------
 # Valid intervals: [1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo]
-interval = "1d"
+interval = "1mo"
 
 # K factor 
 # more about K-value - https://datascience.stackexchange.com/questions/75789/why-is-10-considered-the-default-value-for-k-fold-cross-validation
-# 10 is considered as default value
-# Basically if you have enough data, the factor can be lower
-n_init_input = 4 
+# 10 is considered as default value 
+# Basically if you have enough data, the factor can be lowered - https://datascience.stackexchange.com/questions/75789/why-is-10-considered-the-default-value-for-k-fold-cross-validation
+n_init_input = 5
 
 # ticker
-symbol = 'TSLA'
+symbol = 'TLRY'
 
 # --- calculate based on selected timeframe
 # Valid periods: [1mo,1wk,5m,3mo,6mo,1y,Max]
-period = "1y"
+period = "Max"
 # -----------------------------------------------
 
 def load_prices(ticker, per, interval):
